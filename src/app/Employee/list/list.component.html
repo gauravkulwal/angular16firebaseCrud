@@ -1,0 +1,28 @@
+<table class="table table-stripped">
+    <thead>
+        <th>FullName</th>
+        <th>Email</th>
+        <th>Mobile</th>
+        <th>Gender</th>
+        <th>Joining Date</th>
+        <th>Department</th>
+        <th>IsPermanent?</th>
+        <th>Edit/Delete</th>
+    </thead>
+    <tbody>
+        <tr *ngFor="let emp of employeeList">
+            <td>{{emp.fullName| uppercase}}</td>
+            <td>{{emp.email}}</td>
+            <td>{{emp.phone}}</td>
+            <td>{{emp.gender | uppercase}}</td>
+            <td>{{emp.dateOfJoining}}</td>
+            <td>{{emp.department}}</td>
+            <td>{{emp.isPermanent}}</td>
+<td>
+    <i class="bi bi-pencil-square mx-3" (click)="onEdit(emp)"></i>
+    <i class="bi bi-x-square-fill" (click)="onDelete(emp.id)"></i>
+</td>
+
+        </tr>
+    </tbody>
+</table>
