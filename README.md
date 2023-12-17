@@ -1,5 +1,6 @@
 <h3>Angular 16 - Angular/fire 16 , Angular firebase Crud operation --Employee management system </h3>
 <img src="./list.png" style="width: 500px; height: 200px;"
+  <hr>
   <img src="./add.png" style="width: 500px; height: 200px;"
 # Angularfirebasewmployee
 
